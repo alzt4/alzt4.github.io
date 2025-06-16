@@ -156,7 +156,7 @@ export function IntroCanvas({ count = 100 }: { count: number }) {
   const bgColor = new THREE.Color(0xffffff);
 
   const api = useRef<RapierRigidBody[]>([]);
-  const [bodies, setBodies] = useState<InstancedRigidBodyProps[]>(() =>
+  const [bodies] = useState<InstancedRigidBodyProps[]>(() =>
     Array.from({
       length: count
     }).map(() => createBody())
