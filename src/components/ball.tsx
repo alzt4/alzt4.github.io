@@ -9,8 +9,8 @@ export function Ball(props : any) {
           {...props}
           ref={ref}
           scale={hovered ? 1.5 : 1}
-          onPointerOver={(event) => hover(true)}
-          onPointerOut={(event) => hover(false)}>
+          onPointerOver={() => hover(true)}
+          onPointerOut={() => hover(false)}>
           <sphereGeometry args={[1, 32, 16]} />
           <meshStandardMaterial color={hovered ? '#50b31d' : '#0b25bf'} />
         </mesh>

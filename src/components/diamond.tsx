@@ -1,6 +1,5 @@
-import { FC, useRef } from "react";
+import { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
-import { useTrimesh } from "@react-three/cannon";
 import diamondGLB from "../assets/diamond2.glb";
 import * as THREE from "three";
 

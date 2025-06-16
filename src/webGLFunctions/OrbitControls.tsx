@@ -49,16 +49,16 @@ export function OrbitControls({ distance = 5, minDistance = 0, maxDistance = 25}
         return false;
     };
     
-    function mouseUp(e : MouseEvent) {
+    function mouseUp() {
         // reset both drag values
         drag.current = false;
         hasDragged.current=false;
     };
-
+    /*
     function mouseOut(e : MouseEvent) {
         drag.current=false;
     };
-
+    */
     function mouseMove(e : MouseEvent) {
         if (!drag.current) return false;
         else {

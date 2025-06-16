@@ -1,4 +1,3 @@
-import { Wireframe } from "@react-three/drei";
 import { vec2, vec3, clamp, mat4, Camera, roundTo, vec4} from "./webGLutils";
 import { useRef } from "react";
 

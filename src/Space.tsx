@@ -1,7 +1,7 @@
 import WebGL2Canvas from "./components/WebGLCanvas"
 import { OrbitControls } from "./webGLFunctions/OrbitControls"
 
-export default function Space(props: any) {
+export default function Space() {
   return ( 
     <div><WebGL2Canvas>
       <OrbitControls ></OrbitControls>

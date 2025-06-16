@@ -1,11 +1,11 @@
-import { Canvas, useLoader, useFrame } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import * as THREE from "three";
-import { EXRLoader, RGBELoader } from 'three-stdlib'
+import { EXRLoader } from 'three-stdlib'
 import { Box, Environment, MeshRefractionMaterial, OrbitControls, useGLTF } from "@react-three/drei";
-import { CuboidCollider, InstancedRigidBodies, InstancedRigidBodyProps, Physics, RapierRigidBody, RigidBody } from "@react-three/rapier";
-import { startTransition, StrictMode, Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { InstancedRigidBodies, InstancedRigidBodyProps, Physics, RapierRigidBody, RigidBody } from "@react-three/rapier";
+import { startTransition, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import diamondGLB from "../assets/diamond2.glb";
-import hdr from "../assets/aerodynamics_workshop_1k.hdr"; // sourced https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr
+//import hdr from "../assets/aerodynamics_workshop_1k.hdr"; // sourced https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr
 import spaceExr from "../assets/starmap_2020_4k.exr"; // sourced https://svs.gsfc.nasa.gov/4851/
 import bankVaultExr from "../assets/bank_vault_4k.exr";//sourced https://polyhaven.com/a/bank_vault
 import schoolHallExr from "../assets/school_hall_4k.exr"; // sourced https://polyhaven.com/a/school_hall
