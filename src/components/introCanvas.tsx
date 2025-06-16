@@ -6,24 +6,23 @@ import { InstancedRigidBodies, InstancedRigidBodyProps, Physics, RapierRigidBody
 import { startTransition, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import diamondGLB from "../assets/diamond2.glb";
 //import hdr from "../assets/aerodynamics_workshop_1k.hdr"; // sourced https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr
-import spaceExr from "../assets/starmap_2020_4k.exr"; // sourced https://svs.gsfc.nasa.gov/4851/
-import bankVaultExr from "../assets/bank_vault_4k.exr";//sourced https://polyhaven.com/a/bank_vault
-import schoolHallExr from "../assets/school_hall_4k.exr"; // sourced https://polyhaven.com/a/school_hall
-import schoolQuadExr from "../assets/school_quad_4k.exr"; // sourced https://polyhaven.com/a/school_quad
-import indoorPoolExr from "../assets/indoor_pool_4k.exr"; // ssourced https://polyhaven.com/a/indoor_pool
-import deBalieExr from "../assets/de_balie_4k.exr"; // sourced https://polyhaven.com/a/de_balie
-import poolExr from "../assets/pool_4k.exr"; // sourced https://polyhaven.com/a/pool
-import aftLoungeExr from "../assets/aft_lounge_4k.exr"; // sourced https://polyhaven.com/a/aft_lounge
-import castleZavelsteinCellarExr from "../assets/castle_zavelstein_cellar_4k.exr"; //sourced https://polyhaven.com/a/castle_zavelstein_cellar
-import dresdenStationNightExr from "../assets/dresden_station_night_4k.exr"; // sourced https://polyhaven.com/a/dresden_station_night
-import cinemaLobbyExr from "../assets/cinema_lobby_4k.exr"; // sourced https://polyhaven.com/a/cinema_lobby
-import hamburgHBFExr from "../assets/hamburg_hbf_4k.exr"; // sourced https://polyhaven.com/a/hamburg_hbf
-import glassPassageExr from "../assets/glass_passage_4k.exr"; //sourced https://polyhaven.com/a/glass_passage
-import lapaExr from "../assets/lapa_4k.exr"; // sourced https://polyhaven.com/a/lapa
+import spaceExr from "../../public/starmap_2020_4k.exr"; // sourced https://svs.gsfc.nasa.gov/4851/
+import bankVaultExr from "../../public/bank_vault_4k.exr";//sourced https://polyhaven.com/a/bank_vault
+import schoolHallExr from "../../public/school_hall_4k.exr"; // sourced https://polyhaven.com/a/school_hall
+import schoolQuadExr from "../../public/school_quad_4k.exr"; // sourced https://polyhaven.com/a/school_quad
+import indoorPoolExr from "../../public/indoor_pool_4k.exr"; // ssourced https://polyhaven.com/a/indoor_pool
+import deBalieExr from "../../public/de_balie_4k.exr"; // sourced https://polyhaven.com/a/de_balie
+import poolExr from "../../public/pool_4k.exr"; // sourced https://polyhaven.com/a/pool
+import aftLoungeExr from "../../public/aft_lounge_4k.exr"; // sourced https://polyhaven.com/a/aft_lounge
+import castleZavelsteinCellarExr from "../../public/castle_zavelstein_cellar_4k.exr"; //sourced https://polyhaven.com/a/castle_zavelstein_cellar
+import dresdenStationNightExr from "../../public/dresden_station_night_4k.exr"; // sourced https://polyhaven.com/a/dresden_station_night
+import cinemaLobbyExr from "../../public/cinema_lobby_4k.exr"; // sourced https://polyhaven.com/a/cinema_lobby
+import hamburgHBFExr from "../../public/hamburg_hbf_4k.exr"; // sourced https://polyhaven.com/a/hamburg_hbf
+import glassPassageExr from "../../public/glass_passage_4k.exr"; //sourced https://polyhaven.com/a/glass_passage
+import lapaExr from "../../public/lapa_4k.exr"; // sourced https://polyhaven.com/a/lapa
 // import moonLabExr from "../assets/moon_lab_4k.exr"; // sourced https://polyhaven.com/a/moon_lab
 import { normalizeRange } from "../webGLFunctions/webGLutils";
 import { Loading } from "./loading";
-
 
 //to do 
 
